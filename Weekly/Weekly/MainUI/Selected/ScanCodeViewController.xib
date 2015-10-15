@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScanCodeViewController">
+            <connections>
+                <outlet property="sanFrameView" destination="ASD-sd-tg9" id="6Js-bq-cyD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASD-sd-tg9">
+                    <rect key="frame" x="80" y="172" width="160" height="160"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="X16-JZ-GAg"/>
+                        <constraint firstAttribute="width" constant="160" id="aXn-ue-ufv"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="将网页的二维码放入框内，即可扫描" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4B-6N-tuB">
+                    <rect key="frame" x="28" y="362" width="265" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="1JQ-g7-kge"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.081236965211938586" green="0.1216567144981163" blue="0.24704071969696972" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="e4B-6N-tuB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="28" id="CT4-7w-0rj"/>
+                <constraint firstItem="ASD-sd-tg9" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Jac-rt-Lty"/>
+                <constraint firstItem="ASD-sd-tg9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="btG-oo-pAG"/>
+                <constraint firstAttribute="trailing" secondItem="e4B-6N-tuB" secondAttribute="trailing" constant="27" id="cGv-kt-elP"/>
+                <constraint firstItem="e4B-6N-tuB" firstAttribute="top" secondItem="ASD-sd-tg9" secondAttribute="bottom" constant="30" id="lUp-bN-kGM"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="354" y="258"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="bgImageView" destination="vg6-T1-OJy" id="El6-Mr-0es"/>
+                <outlet property="qqLoginButton" destination="R5a-LX-vY1" id="lXj-GS-tIx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wxLoginButton" destination="p4q-HG-Gpe" id="n06-hY-mPO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testPic4" translatesAutoresizingMaskIntoConstraints="NO" id="vg6-T1-OJy">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4q-HG-Gpe">
+                    <rect key="frame" x="10" y="398" width="300" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="qet-OZ-IEp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="微信帐号登录">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5a-LX-vY1">
+                    <rect key="frame" x="10" y="451" width="300" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="nKV-00-gpE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="QQ帐号登录">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="qqLoginAction:" destination="-1" eventType="touchUpInside" id="ky6-rB-ih4"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="业界HTML5案例创意、技巧触手可及" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzg-dc-1Kh">
+                    <rect key="frame" x="10" y="172" width="300" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="LXu-Yl-fOn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每周精选H5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQt-Sw-c5h">
+                    <rect key="frame" x="10" y="108" width="300" height="40"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="66a-hv-Jnc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vg6-T1-OJy" secondAttribute="bottom" id="3IR-mA-PK4"/>
+                <constraint firstAttribute="bottom" secondItem="R5a-LX-vY1" secondAttribute="bottom" constant="77" id="4qV-CF-3dD"/>
+                <constraint firstItem="Lzg-dc-1Kh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="5wS-Gq-Wae"/>
+                <constraint firstAttribute="trailing" secondItem="p4q-HG-Gpe" secondAttribute="trailing" constant="10" id="7Qu-jl-w26"/>
+                <constraint firstAttribute="trailing" secondItem="Lzg-dc-1Kh" secondAttribute="trailing" constant="10" id="CUL-6U-cO5"/>
+                <constraint firstItem="R5a-LX-vY1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Imc-Nd-ieU"/>
+                <constraint firstItem="p4q-HG-Gpe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="K9n-Hx-LgI"/>
+                <constraint firstAttribute="trailing" secondItem="R5a-LX-vY1" secondAttribute="trailing" constant="10" id="OrO-dW-KZT"/>
+                <constraint firstAttribute="trailing" secondItem="vg6-T1-OJy" secondAttribute="trailing" id="PwI-uR-30O"/>
+                <constraint firstItem="vg6-T1-OJy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XoA-V5-722"/>
+                <constraint firstItem="Lzg-dc-1Kh" firstAttribute="top" secondItem="BQt-Sw-c5h" secondAttribute="bottom" constant="24" id="ZSP-Px-Jux"/>
+                <constraint firstAttribute="trailing" secondItem="BQt-Sw-c5h" secondAttribute="trailing" constant="10" id="dcf-aQ-d8u"/>
+                <constraint firstItem="BQt-Sw-c5h" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="mVv-Og-ZV3"/>
+                <constraint firstItem="R5a-LX-vY1" firstAttribute="top" secondItem="p4q-HG-Gpe" secondAttribute="bottom" constant="13" id="u0q-bf-rHw"/>
+                <constraint firstItem="BQt-Sw-c5h" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="108" id="ugc-Z7-HBs"/>
+                <constraint firstItem="vg6-T1-OJy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wDl-Oo-Azx"/>
+            </constraints>
+            <point key="canvasLocation" x="354" y="340"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="testPic4" width="235" height="417"/>
+    </resources>
+</document>
